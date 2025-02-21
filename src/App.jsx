@@ -13,6 +13,7 @@ function App() {
         {/* Ruta principal que muestra el login */}
         <Route path="/" element={<Login />} />
 
+        
         {/* Ruta protegida para Home */}
         <Route
           path="/home"
