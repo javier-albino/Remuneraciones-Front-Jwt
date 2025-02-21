@@ -22,7 +22,7 @@ const handleResponse = async (response) => {
 
 const login = async (correo, password) => {
   try {
-    const response = await fetch('http://localhost:3000/auth/login', {
+    const response = await fetch('http://18.189.157.175:3000/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ correo, password }), // 🔹 Cambia 'email' por 'correo'
@@ -45,7 +45,7 @@ const login = async (correo, password) => {
   }
 };
 
-const API_URL = 'http://localhost:3000/remuneraciones'; // ⚠️ Cambia esto si usas otro puerto o dominio
+const API_URL = 'http://18.189.157.175:3000/remuneraciones'; // ⚠️ Cambia esto si usas otro puerto o dominio
 
 export const getRemuneraciones = async () => {
   try {
@@ -64,7 +64,5 @@ export const getRemuneraciones = async () => {
     return null;
   }
 };
-
-
 
 export { login };
