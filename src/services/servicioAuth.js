@@ -45,6 +45,7 @@ const login = async (correo, password) => {
   }
 };
 
+
 const API_URL = 'https://18.189.157.175:3000/remuneraciones'; // ⚠️ Cambia esto si usas otro puerto o dominio
 
 export const getRemuneraciones = async () => {
